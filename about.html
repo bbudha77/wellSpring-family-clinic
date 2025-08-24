@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us — WellSpring Family Clinic</title>
+    <meta
+      name="description"
+      content="Learn about WellSpring Family Clinic: our mission, values, and caring team of doctors."
+    />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* ================== Hero Banner ================== */
+      main {
+        padding-top: 7.25rem;
+      }
+
+      .hero {
+        position: relative;
+        isolation: isolate;
+        border-radius: 16px;
+        overflow: hidden;
+        margin: 1.25rem auto 0;
+        min-height: 280px;
+        display: grid;
+        place-items: center;
+        box-shadow: var(--box-shadow);
+        background: linear-gradient(
+            60deg,
+            rgba(42, 127, 186, 0.88),
+            rgba(30, 99, 145, 0.88)
+          ),
+          url("https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1600&auto=format&fit=crop")
+            center/cover no-repeat;
+        color: #fff;
+      }
+      .hero__inner {
+        padding: 3.25rem 1.25rem;
+        text-align: center;
+        width: min(900px, 92%);
+      }
+      .hero__title {
+        font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem);
+        line-height: 1.2;
+        margin-bottom: 0.6rem;
+      }
+      .hero__lead {
+        opacity: 0.95;
+      }
+
+      /* ================== Section Headings ================== */
+      .section {
+        padding: 3rem 0;
+      }
+
+      .section__title::after {
+        content: "";
+        display: block;
+        width: 90px;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--accent-color);
+        margin: 0.6rem auto 0;
+      }
+      .section__lead {
+        text-align: center;
+        color: var(--text-light);
+        max-width: 800px;
+        margin: 0.25rem auto 0;
+      }
+
+      /* ================== Cards / Panels ================== */
+      .cards {
+        display: grid;
+        gap: 1.3rem;
+        margin-top: 1.4rem;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      @media (max-width: 980px) {
+        .cards {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 640px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .doc {
+        background: #fff;
+        padding: 1.4rem;
+        border-radius: var(--border-radius);
+        border: 1px solid #e6edf5;
+        box-shadow: var(--box-shadow);
+        text-align: center;
+        transition: var(--transition);
+      }
+      .doc:hover {
+        transform: translateY(-4px);
+      }
+      .doc__img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 0.75rem;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+      }
+      .doc__name {
+        font-weight: 600;
+        color: var(--primary-dark);
+      }
+      .doc__role {
+        color: var(--text-light);
+        font-size: 0.95rem;
+        margin-bottom: 0.35rem;
+      }
+      .doc__bio {
+        color: var(--text-color);
+        font-size: 0.95rem;
+      }
+
+      /* ================== CTA Banner ================== */
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 600;
+        background: #fff;
+        color: var(--primary-dark);
+        border: 2px solid transparent;
+        padding: 0.8rem 1.15rem;
+        border-radius: 12px;
+        transition: var(--transition);
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+      }
+      .btn--accent {
+        background: var(--accent-color);
+        color: #fff;
+      }
+      .btn--accent:hover {
+        background: #ff6a12;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="/"
+          ><i class="fas fa-clinic-medical"></i> WellSpring</a
+        >
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="primary-nav" class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
+          <li><a href="appointment.html">Appointment</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+      <!-- Hero -->
+      <section
+        class="hero container reveal"
+        aria-label="About WellSpring banner"
+      >
+        <div class="hero__inner">
+          <h1 class="hero__title">Caring for Families, Every Day</h1>
+          <p class="hero__lead">
+            We’re a community clinic focused on accessible, friendly,
+            evidence-based care for every stage of life.
+          </p>
+        </div>
+      </section>
+
+      <!-- About Clinic -->
+      <section class="section container reveal">
+        <h2 class="section__title">Who We Are</h2>
+        <p class="section__lead">
+          WellSpring Family Clinic provides general practice, immunizations,
+          preventive checks, and telehealth. Our team blends compassion with
+          clinical excellence.
+        </p>
+
+        <div class="about-blurb">
+          <p>
+            We keep things simple for patients: clear communication, minimal
+            waiting, and coordinated care plans tailored to your goals.
+          </p>
+          <ul class="about-list">
+            <li>
+              <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+              Patient-first appointments and follow-ups
+            </li>
+            <li>
+              <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+              Preventive care that fits your lifestyle
+            </li>
+            <li>
+              <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+              Referrals to trusted specialists when needed
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Mission / Vision / Values -->
+      <section class="section container reveal">
+        <h2 class="section__title">Our Mission, Vision & Values</h2>
+        <div class="cards">
+          <article class="card" aria-labelledby="missionTitle">
+            <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+            <h3 id="missionTitle">Mission</h3>
+            <p>
+              Deliver accessible, affordable, patient-centred healthcare that
+              improves long-term wellbeing.
+            </p>
+          </article>
+          <article class="card" aria-labelledby="visionTitle">
+            <i class="fa-solid fa-eye" aria-hidden="true"></i>
+            <h3 id="visionTitle">Vision</h3>
+            <p>
+              Be the most trusted family health partner in our community through
+              quality and kindness.
+            </p>
+          </article>
+          <article class="card" aria-labelledby="valuesTitle">
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            <h3 id="valuesTitle">Values</h3>
+            <p>
+              Compassion, respect, and excellence guide every interaction and
+              every clinical decision.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section class="section container reveal" aria-labelledby="teamTitle">
+        <h2 id="teamTitle" class="section__title">Meet Our Doctors</h2>
+        <div class="team-grid">
+          <article class="doc">
+            <img
+              class="doc__img"
+              src="https://via.placeholder.com/240x240.png?text=Dr.+Emily+Smith"
+              alt="Portrait of Dr. Emily Smith"
+            />
+            <div class="doc__name">Dr. Emily Smith</div>
+            <div class="doc__role">General Practitioner</div>
+            <p class="doc__bio">
+              10+ years of family medicine. Preventive care, chronic conditions,
+              and friendly guidance.
+            </p>
+          </article>
+
+          <article class="doc">
+            <img
+              class="doc__img"
+              src="https://via.placeholder.com/240x240.png?text=Dr.+James+Thompson"
+              alt="Portrait of Dr. James Thompson"
+            />
+            <div class="doc__name">Dr. James Thompson</div>
+            <div class="doc__role">Pediatrician</div>
+            <p class="doc__bio">
+              Child-focused care, immunization expertise, and a gentle approach
+              kids love.
+            </p>
+          </article>
+
+          <article class="doc">
+            <img
+              class="doc__img"
+              src="https://via.placeholder.com/240x240.png?text=Dr.+Olivia+Brown"
+              alt="Portrait of Dr. Olivia Brown"
+            />
+            <div class="doc__name">Dr. Olivia Brown</div>
+            <div class="doc__role">Family Health Specialist</div>
+            <p class="doc__bio">
+              Holistic, long-term care plans that support the health goals of
+              the whole family.
+            </p>
+          </article>
+        </div>
+
+        <div class="banner" role="region" aria-label="Book appointment callout">
+          <div>
+            <strong>Want to meet our team?</strong> Book an appointment and
+            we’ll get you in soon.
+          </div>
+          <a class="btn btn--accent" href="appointment.html"
+            ><i class="fa-solid fa-calendar-check"></i> Request Appointment</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <p>
+          &copy; <span id="year"></span> WellSpring Family Clinic. All rights
+          reserved.
+        </p>
+        <nav aria-label="Footer">
+          <a href="services.html">Services</a>
+          <a href="appointment.html">Appointment</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

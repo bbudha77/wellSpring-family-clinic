@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — WellSpring Family Clinic</title>
+    <meta
+      name="description"
+      content="Get in touch with WellSpring Family Clinic. Find our address, phone, email, map, and send us a message."
+    />
+
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("XQmpG6ai4gJVNHjPM");
+      })();
+    </script>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <style>
+      .card i {
+        font-size: 1rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        display: inline-block;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--primary-color);
+        color: #fff;
+        border: none;
+        padding: 0.85rem 1.3rem;
+        border-radius: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+
+      .btn:hover,
+      .btn:focus {
+        background: var(--primary-dark);
+        transform: translateY(-2px);
+      }
+
+      .btn i {
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="/"
+          ><i class="fas fa-clinic-medical"></i> WellSpring</a
+        >
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="primary-nav" class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
+          <li><a href="appointment.html">Appointment</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+      <section class="section container reveal">
+        <h1 class="section__title">Contact Us</h1>
+        <p class="section__lead">
+          We’d love to hear from you. Find our details below or send us a
+          message using the form.
+        </p>
+
+        <div class="grid">
+          <!-- Contact Details -->
+          <aside class="card contact-info" aria-labelledby="detailsTitle">
+            <h2 id="detailsTitle">
+              <i class="fa-solid fa-circle-info" aria-hidden="true"></i> Clinic
+              Details
+            </h2>
+
+            <div class="info-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>WellSpring Family Clinic</strong><br />
+                123 Community Rd, Sydney
+              </div>
+            </div>
+
+            <div class="info-row">
+              <i class="fa-solid fa-phone"></i>
+              <div>+01-2-345-67890</div>
+            </div>
+
+            <div class="info-row">
+              <i class="fa-solid fa-envelope"></i>
+              <div>hello@wellspring.example</div>
+            </div>
+
+            <div class="info-row">
+              <i class="fa-solid fa-clock"></i>
+              <div>Mon–Fri: 8:00–18:00 &nbsp; | &nbsp; Sat: 9:00–13:00</div>
+            </div>
+          </aside>
+
+          <!-- Contact Form -->
+          <article class="card" aria-labelledby="formTitle">
+            <h2 id="formTitle">
+              <i class="fa-solid fa-message" aria-hidden="true"></i> Send a
+              Message
+            </h2>
+
+            <form id="contactForm" class="form" novalidate>
+              <div class="two-col">
+                <div class="form__row">
+                  <label for="name">Full Name <span class="req">*</span></label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    aria-describedby="nameErr"
+                  />
+                  <small id="nameErr" class="error" aria-live="polite"></small>
+                </div>
+
+                <div class="form__row">
+                  <label for="email">Email <span class="req">*</span></label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    aria-describedby="emailErr"
+                  />
+                  <small id="emailErr" class="error" aria-live="polite"></small>
+                </div>
+              </div>
+
+              <div class="two-col">
+                <div class="form__row">
+                  <label for="phone">Phone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="+61-98xxxxxxx"
+                  />
+                </div>
+
+                <div class="form__row">
+                  <label for="subject">Subject</label>
+                  <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    placeholder="How can we help?"
+                  />
+                </div>
+              </div>
+
+              <div class="form__row">
+                <label for="message">Message <span class="req">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  aria-describedby="messageErr"
+                  placeholder="Write your message here..."
+                ></textarea>
+                <small id="messageErr" class="error" aria-live="polite"></small>
+              </div>
+
+              <button class="btn" type="submit">Send Message</button>
+              <div
+                class="result"
+                id="contactResult"
+                role="status"
+                aria-live="polite"
+              ></div>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <p>
+          &copy; <span id="year"></span> WellSpring Family Clinic. All rights
+          reserved.
+        </p>
+        <nav aria-label="Footer">
+          <a href="services.html">Services</a>
+          <a href="appointment.html">Appointment</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact-form-handle.js"></script>
+  </body>
+</html>

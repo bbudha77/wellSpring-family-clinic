@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Services — WellSpring Family Clinic</title>
+    <meta
+      name="description"
+      content="Explore the medical services offered by WellSpring Family Clinic including general practice, immunizations, and family health."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      .btn {
+        display: inline-block;
+        background-color: var(--white);
+        color: var(--primary-dark);
+        padding: 0.8rem 1.6rem;
+        border-radius: var(--border-radius);
+        font-weight: 600;
+        transition: var(--transition);
+        border: 2px solid transparent;
+      }
+      .btn:hover,
+      .btn:focus {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .btn-primary {
+        background-color: var(--accent-color);
+        color: var(--white);
+      }
+      .btn-primary:hover,
+      .btn-primary:focus {
+        background-color: #ff6a12;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="/">
+          <i class="fas fa-clinic-medical"></i>
+          WellSpring
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="primary-nav" class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
+          <li><a href="appointment.html">Appointment</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+      <section class="section container reveal">
+        <h1 class="section__title">Our Services</h1>
+        <p class="section__lead">
+          We provide comprehensive, family-focused healthcare. Explore our core
+          services below.
+        </p>
+
+        <div class="cards">
+          <!-- General Practice -->
+          <article class="card">
+            <i class="fas fa-user-md" aria-hidden="true"></i>
+            <h3>General Practice</h3>
+            <p>
+              Consultations, checkups, diagnosis, prescriptions, and ongoing
+              care for all ages.
+            </p>
+            <ul>
+              <li>Chronic disease management</li>
+              <li>Routine health checks</li>
+              <li>Referrals to specialists</li>
+            </ul>
+          </article>
+
+          <!-- Immunizations -->
+          <article class="card">
+            <i class="fas fa-syringe" aria-hidden="true"></i>
+            <h3>Immunizations</h3>
+            <p>
+              Routine and seasonal vaccinations for children, teens, and adults
+              to prevent illness.
+            </p>
+            <ul>
+              <li>Childhood vaccination schedule</li>
+              <li>Flu & booster shots</li>
+              <li>Travel vaccinations</li>
+            </ul>
+          </article>
+
+          <!-- Family Health -->
+          <article class="card">
+            <i class="fas fa-heartbeat" aria-hidden="true"></i>
+            <h3>Family Health</h3>
+            <p>
+              Preventive care and wellbeing programs tailored for every member
+              of your family.
+            </p>
+            <ul>
+              <li>Nutrition & lifestyle guidance</li>
+              <li>Preventive screening</li>
+              <li>Long-term care plans</li>
+            </ul>
+          </article>
+
+          <!-- Optional: Women's Health -->
+          <article class="card">
+            <i class="fas fa-venus" aria-hidden="true"></i>
+            <h3>Women’s Health</h3>
+            <p>
+              Screening, antenatal advice, reproductive health and wellbeing
+              support.
+            </p>
+            <ul>
+              <li>Well-woman checks</li>
+              <li>Pregnancy support</li>
+              <li>Screenings & referrals</li>
+            </ul>
+          </article>
+
+          <!-- Optional: Men's Health -->
+          <article class="card">
+            <i class="fas fa-mars" aria-hidden="true"></i>
+            <h3>Men’s Health</h3>
+            <p>
+              Preventive checks, counseling, and management of common men’s
+              health conditions.
+            </p>
+            <ul>
+              <li>Heart health checks</li>
+              <li>Lifestyle coaching</li>
+              <li>Referrals when needed</li>
+            </ul>
+          </article>
+
+          <!-- Optional: Telehealth -->
+          <article class="card">
+            <i class="fas fa-video" aria-hidden="true"></i>
+            <h3>Telehealth Consultations</h3>
+            <p>
+              Secure video appointments for convenience and continuity of care
+              from home.
+            </p>
+            <ul>
+              <li>Follow-ups & prescriptions</li>
+              <li>Chronic care reviews</li>
+              <li>General consultations</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- CTA Banner -->
+        <div class="banner reveal" style="margin-top: 3rem">
+          <h2 class="section__title" style="color: #fff">Ready to book?</h2>
+          <p style="margin: 0.5rem 0 1.2rem">
+            Request an appointment and we’ll confirm by email or phone.
+          </p>
+          <a
+            class="btn btn-primary"
+            href="appointment.html"
+            aria-label="Go to Appointment page"
+          >
+            Book an Appointment
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <p>
+          &copy; <span id="year"></span> WellSpring Family Clinic. All rights
+          reserved.
+        </p>
+        <nav aria-label="Footer">
+          <a href="services.html" aria-current="page">Services</a>
+          <a href="appointment.html">Appointment</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
