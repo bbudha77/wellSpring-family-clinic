@@ -57,7 +57,7 @@ form.addEventListener("submit", async (e) => {
 
   res.textContent = "Sending…";
   try {
-    await emailjs.send("service_i13wp5y", "template_ej10i3t", {
+    await emailjs.send("service_code", "contact_template_code", {
       from_name: fields.name.value,
       from_email: fields.email.value,
       phone: fields.phone.value || "",

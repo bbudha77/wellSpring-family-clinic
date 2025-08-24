@@ -70,10 +70,10 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  // Success UI (replace with EmailJS if you want real emails)
+  // Success UI
   res.textContent = "Sending…";
   emailjs
-    .send("service_i13wp5y", "template_t1sojhk", {
+    .send("service_code", "appointment_template_code", {
       from_name: fields.name.value,
       from_email: fields.email.value,
       phone: document.getElementById("phone").value || "",
