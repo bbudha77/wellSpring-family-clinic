@@ -73,12 +73,14 @@ form.addEventListener("submit", (e) => {
   // Success UI
   res.textContent = "Sending…";
   emailjs
-    .send("service_code", "appointment_template_code", {
+    .send("service_5oupc9a", "template_wx4ylsp", {
       from_name: fields.name.value,
       from_email: fields.email.value,
       phone: document.getElementById("phone").value || "",
       date: fields.date.value,
       message: fields.message.value,
+      origin: window.location.origin,
+      time: new Date().toLocaleString(),
     })
     .then(() => {
       res.classList.add("ok");

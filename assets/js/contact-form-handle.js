@@ -57,12 +57,14 @@ form.addEventListener("submit", async (e) => {
 
   res.textContent = "Sending…";
   try {
-    await emailjs.send("service_code", "contact_template_code", {
+    await emailjs.send("service_5oupc9a", "template_yfz6ozu", {
       from_name: fields.name.value,
       from_email: fields.email.value,
       phone: fields.phone.value || "",
       subject: fields.subject.value || "Contact Form",
       message: fields.message.value,
+      origin: window.location.origin,
+      time: new Date().toLocaleString(),
     });
     res.classList.add("ok");
     res.textContent = "Thanks! Your message has been sent.";
